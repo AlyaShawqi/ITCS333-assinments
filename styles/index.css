@@ -6,7 +6,8 @@
 .banner{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(sunshinebackground.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75), url(styles\sunshinebackground.jpg));
+  background-color: black ;
   background-size: cover;
   background-position: center;
 }
@@ -38,7 +39,7 @@
   content: "";
   height: 3px;
   width: 0;
-  background: #f81cd3;
+  background: #107518;
   position: absolute;
   left: 0   ;
   bottom: 0;
