@@ -6,11 +6,10 @@
 .banner{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../sunshinebackground.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../images/sunshinebackground.jpg);
   background-size: cover;
   background-position: center;
 }
-
 
 
 .navbar{
@@ -113,5 +112,13 @@ button:hover{
   font-weight: 600;
   font-size: 60px;
     margin-left: 60px;
+
+}
+.schedual{
+    height: 550px;
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+
 
 }
