@@ -15,19 +15,32 @@
         <div class="navbar">
             <img src= images\sunshine.jpg class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Bloges</a></li>
-                <li><a href="#">Games</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Books</a></li>
+                <li class="hideOnMobile"><a href="#">Bloges</a></li>
+                <li class="hideOnMobile"><a href="#">Games</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
 
             <ul class = "sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Books</a></li>
                 <li><a href="#">Bloges</a></li>
                 <li><a href="#">Games</a></li>
             </ul>
         </div>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
 
         <div class="content">
             <h1>Welcome To Sunshine Kindergarten</h1>
@@ -46,11 +59,75 @@
 
         <div class="item-2">
             <h1 id="weekly-schedule">Weekly Schedule</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <th>7:30 - 8:00</th>
+                    <td colspan="5">Arrival and Free Play</td>
+                    </tr>
+
+                    <tr>
+                        <th>8:00 - 8:30</th>
+                        <td colspan="5">Circule Time and Welcome</td>
+                    </tr>
+                        <th>8:30 - 9:15</th>
+                        <td>English Language and Literature</td>
+                        <td>Science and Nature Exploration</td>
+                        <td>Math and Puzzels</td>
+                        <td>Science and Nature Exploration</td>
+                        <td>English Language and Literature</td>
+                    <tr>
+
+                    <tr>
+                        <th>9:15 - 10:00</th>
+                        <td>History and Geography</td>
+                        <td>Math and Puzzels</td>
+                        <td>Arabic Language and Literature</td>
+                        <td>History and Geography</td>
+                        <td>Arabic Language and Literature</td>
+                    </tr>
+
+                    <tr>
+                        <th>10:00 - 10:30</th>
+                        <td colspan="5">Snack Time</td>
+                    </tr>
+
+                    <tr>
+                        <th>10:30 - 12:00</th>
+                        <td>Show and Tell</td>
+                        <td>Art and Craft</td>
+                        <td>Outdoor Playing</td>
+                        <td>Cooking Activity</td>
+                        <td>Intro to Computer and Mouse Skills</td>
+                    </tr>
+
+                    <tr>
+                        <th>12:00 - 12:30</th>
+                        <td colspan="5">Closing Circule and Forewell to Students</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
        
   
         <div class="item-3">
-            <h1 id="announcements">Announcements</h1></div>
+            <h1 id="announcements">Announcements</h1>
+            <ul>
+                <li>Dear parents, please be announced that the payment period for this month ends at 14 October 2024.</li>
+                <li>Teachers Day Celebration: the Celebration will be hold this Wednesday during the outdoor play time, happy teachers day for our dear teachers. </li>
+                <li>Links for Maths and Science e-activity books</li>
+                <li>Our recipe for this week cooking activity will be cupcakes. Dear parents, please supply your children with some cake decorations to help them make their yummy cupcakes. </li>
+            </ul>
         </div>
 
         <div class="item-4">
