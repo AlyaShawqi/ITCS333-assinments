@@ -187,3 +187,82 @@ button:hover{
     font-size: 20px;
   }
 }
+
+
+
+
+
+
+
+
+/* Style the container for the schedule */
+.item-2 {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+#weekly-schedule {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Style the table headers */
+table thead th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Style the first column (time slots) */
+table tbody th {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  width: 20%;
+}
+
+/* Style the table data cells */
+table tbody td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Zebra striping for rows */
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style rows with colspan */
+table tbody td[colspan] {
+  background-color: #e0f7fa;
+  font-weight: bold;
+}
+
+/* Add hover effect */
+table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.2s;
+}
+
