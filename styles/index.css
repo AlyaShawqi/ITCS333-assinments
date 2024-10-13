@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: stretch;
+  background-color: #d5f1c9;
 }
 
 .item-1{
@@ -58,6 +59,7 @@
 .logo{
   width: 120px;
   cursor: pointer;
+  border-radius: 15px;
 }
 .navbar ul li{
   list-style: none;
@@ -198,7 +200,7 @@ button:hover{
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: #f7f7f7;
+  background-color: #9fd281;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -226,16 +228,16 @@ table thead th {
   font-weight: bold;
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid #022311;
 }
 
 /* Style the first column (time slots) */
 table tbody th {
-  background-color: #f2f2f2;
+  background-color: #d5f1c9;
   color: #333;
   padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
+  text-align: center;
+  border: 1px solid #022311;
   width: 20%;
 }
 
@@ -243,7 +245,7 @@ table tbody th {
 table tbody td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid #022311;
 }
 
 /* Zebra striping for rows */
@@ -253,8 +255,9 @@ table tbody tr:nth-child(even) {
 
 /* Style rows with colspan */
 table tbody td[colspan] {
-  background-color: #e0f7fa;
+  background-color: #c1deb4;
   font-weight: bold;
+  border: 1px solid #022311;
 }
 
 /* Add hover effect */
@@ -267,7 +270,7 @@ table tbody tr:hover {
 
 /* Styling the Announcements Section */
 .item-3 {
-  background-color: #f0f8ff; /* Light blue background */
+  background-color: #9fd281; /* Light blue background */
   padding: 20px; /* Add padding for spacing */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -288,7 +291,7 @@ table tbody tr:hover {
 
 .item-3 ul li {
   font-size: 1.1rem; /* Slightly larger text for the list items */
-  color: #555; /* Softer gray color for list text */
+  color: #256030; 
   margin-bottom: 10px; /* Add space between list items */
 }
 
@@ -296,12 +299,12 @@ table tbody tr:hover {
   font-weight: bold; /* Highlight the first item in bold */
 }
 .item-3 ul li:first-child:hover{
-  color: #ff0000; /* Change text color on hover */
+  color: #ba1d1d; /* Change text color on hover */
 }
 
 /* Hover effect for list items */
 .item-3 ul li:hover {
-  color: #007bff; /* Change text color on hover */
+  color: #79481e; /* Change text color on hover */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -311,7 +314,7 @@ table tbody tr:hover {
 .item-4 {
   padding: 20px;
   margin: 20px 0;
-  background-color: #f9f9f9; /* Light background color */
+  background-color: #9fd281; /* Light background color */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
 }
@@ -415,3 +418,51 @@ table tbody tr:hover {
   color: #333; /* Dark color for strong text */
 }
 
+.footer{
+  background-color: #043809;
+  padding: 70px 0;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.item-6 ul{
+  list-style: none;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerCol{
+  width: auto;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footerCol h4{
+  font-size: 15px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  margin: 0 15px 0 0;
+  font-weight: 500;
+  position: relative;
+}
+
+.footerCol h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  background-color: #007BFF;
+}
+
+/*.footerCol ul li:not(:last-child){
+  margin-bottom: 10px;
+}
