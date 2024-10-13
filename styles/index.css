@@ -354,3 +354,64 @@ table tbody tr:hover {
 .gallery-item img:hover {
   transform: scale(1.05); /* Slight zoom effect */
 }
+
+
+/* Style for the Our Teachers section */
+.item-5 {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Heading for the entire section */
+.item-5 h3 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Introduction paragraph */
+.intro {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #666; /* Slightly darker color for contrast */
+  text-align: center;
+}
+
+/* Style for each teacher block */
+.teacher {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* White background for teacher info */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Individual shadow for each teacher */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect on each teacher's block */
+.teacher:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Style for each teacher's name and title */
+.teacher h4 {
+  font-size: 1.5rem;
+  color: #007BFF; /* Blue color for teacher names */
+  margin-bottom: 10px;
+}
+
+/* General style for paragraphs under each teacher */
+.teacher p {
+  font-size: 1rem;
+  color: #555; /* Dark grey for text */
+  line-height: 1.6; /* Better line spacing */
+}
+
+/* Style for making the headings (qualification, experience, etc.) bold */
+.teacher p strong {
+  color: #333; /* Dark color for strong text */
+}
+
