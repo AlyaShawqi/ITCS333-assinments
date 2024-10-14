@@ -1,4 +1,4 @@
-.grid-container{
+.grid-container{ /*initializing grid layout with 2 col + 7 rows*/
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto auto auto auto;
@@ -8,31 +8,30 @@
   background-color: #d5f1c9;
 }
 
-.item-1{
+.item-1{ /*nav bar + welocme message + content buttons*/ 
   grid-area: 1 / 1 / 2 / -1 ;
 }
 
-
-
-.item-2{
+.item-2{ /*schedule*/
   grid-area: 2 / 1 / 3 / -1 ;
 }
 
-.item-3{
+.item-3{ /*announcements*/
   grid-area: 3 / 1 / 4 / -1 ;
 }
 
-.item-4{
+.item-4{ /*class activities*/
   grid-area: 4 / 1 / 5 / -1 ;
 }
 
-.item-5{
+.item-5{ /*teachers*/
   grid-area: 5 / 1 / 6 / -1 ;
 }
 
-.item-6{
+.item-6{ /*footer*/
   grid-area: 6 / 1 / 7 / -1;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -40,7 +39,7 @@
   box-sizing: border-box;
 }
 
-.banner{
+.banner{ /*background photo style*/
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.75)), url(../images/sunshinebackground.jpg);
@@ -48,8 +47,8 @@
   background-position: center;
 }
 
-
-.navbar{
+/*navbar styling*/
+.navbar{ 
   width: 85%;
   margin: auto;
   padding: 35px 35px;
@@ -57,7 +56,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo{
+.logo{ /*kindergarten logo style*/
   width: 120px;
   cursor: pointer;
   border-radius: 15px;
@@ -73,7 +72,8 @@
   color: #fff;
   text-transform: uppercase;
 }
-.navbar ul li::after{
+
+.navbar ul li::after{ /*hover essfect on bar contents*/
   content: "";
   height: 3px;
   width: 0;
@@ -88,14 +88,14 @@
   width: 100%;
 }
 
-.sidebar{
+/*mobile view side bar styling*/
+.sidebar{ 
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 75%;
   z-index: 999;
-  /* background-color: rgba(80, 146, 68, 0.3); */
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
@@ -114,14 +114,19 @@
   display: none;
 }
 
-@media(max-width:992px){
+@media(max-width:992px){ /*responsive side bar*/
   .menu-button{
     display: block;
   }
 }
 
+@media(max-width:992px){ /*responsive side bar*/
+  .large-screen-sidebar {
+    display: none;
+  }
+}
 
-
+/*welocme message styling*/
 .content{
   width: 100%;
   position: absolute;
@@ -135,6 +140,8 @@
   font-weight: 100;
   line-height: 25px;
 }
+
+/*content buttons styling*/
 button{
   width: 200px;
   padding: 15px 0;
@@ -159,13 +166,12 @@ span{
   z-index: -1;
   transition: 0.5s;
 }
-button:hover span{
+button:hover span{ /*hover effect on click*/
     width: 100%;
 }
 button:hover{ 
  border: none; 
 }
-
 
 /* Style of the weekly schedule */
 .item-2 {
@@ -176,12 +182,6 @@ button:hover{
   background-color: #9fd281;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
 }
 
 /* Style the heading */
@@ -234,13 +234,11 @@ table tbody td[colspan] {
   border: 1px solid #022311;
 }
 
-/* Add hover effect */
-/*table tbody tr:hover {
-  background-color: #f1f1f1;
-  transition: background-color 0.2s;
-}*/
-
-
+.table-responsive { /*making table responsive to different screens*/
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
 
 /* Styling the Announcements Section */
 .item-3 {
@@ -276,7 +274,7 @@ table tbody td[colspan] {
   color: #ba1d1d; /* Change text color on hover */
 }
 
-/* Hover effect for list items */
+/* Hover effect for announcements */
 .item-3 ul li:hover {
   color: #79481e; /* Change text color on hover */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
@@ -337,7 +335,6 @@ table tbody td[colspan] {
 /* Style for the Our Teachers section */
 .item-5 {
   padding: 20px;
-  /* margin: 20px 0; */
   background-color: #d5f1c9; /* Light background color */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -393,6 +390,7 @@ table tbody td[colspan] {
   color: #333; /* Dark color for strong text */
 }
 
+/*footer styling*/
 .footer{
   background-color: #206726;
   padding: 70px 0;
@@ -417,7 +415,7 @@ table tbody td[colspan] {
   padding: 0 15px;
 }
 
-.footerCol h4{
+.footerCol h4{ /*footer headers*/
   font-size: 15px;
   color: #ffffff;
   text-transform: capitalize;
@@ -425,7 +423,7 @@ table tbody td[colspan] {
   position: relative;
 }
 
-.footerCol h4::before{
+.footerCol h4::before{ /*insert line under headers*/
   content: '';
   position: absolute;
   left: 0;
@@ -440,7 +438,7 @@ table tbody td[colspan] {
   margin-bottom: 10px;
 }
 
-.footerCol ul li a{
+.footerCol ul li a{ /*styling for linked contents*/
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -451,12 +449,12 @@ table tbody td[colspan] {
   transition: all 0.3s ease;
 }
 
-.footerCol ul li a:hover{
+.footerCol ul li a:hover{ /*hover effect when clicking on linked contents*/
   color: #113320;
   padding-left: 10px;
 }
 
-.footerCol ul li {
+.footerCol ul li { /*design for non linked contents*/
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -466,7 +464,7 @@ table tbody td[colspan] {
   color: #bbbbbb;
 }
 
-.footerCol .socialLinks a{
+.footerCol .socialLinks a{ /*design for social media icons*/
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -484,27 +482,23 @@ transform: translateY(5px);
 fill: #bbbbbb;
 }
 
-.footerCol .socialLinks a:hover{
+.footerCol .socialLinks a:hover{ /*hover effect on social media icons*/
   background-color: #113320;
 }
 
-@media(max-width:768px){
+@media(max-width:768px){ /*responsive footer*/
     .footerCol{
       width: 50%;
       margin-bottom: 30px;
     }
 }
 
-@media(max-width:574px){
+@media(max-width:574px){ /*responsive footer*/
   .footerCol{
     width: 100%;
     margin-bottom: 30px;
   }
 }
 
-@media(max-width:992px){
-  .large-screen-sidebar {
-    display: none;
-  }
-}
+
 

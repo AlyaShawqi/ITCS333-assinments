@@ -10,18 +10,18 @@
 <body>
     
     <div class="grid-container">
-        <div class="item-1">
+        <div class="item-1"> <!--nav bar + welocme message + content buttons section-->
             <div class="banner">
         <div class="navbar">
             <img src= images\sunshine.jpg class="logo">
-            <ul class="large-screen-sidebar">
+            <ul class="large-screen-sidebar"> <!--desktop navbar-->
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Books</a></li>
                 <li><a href="#">Bloges</a></li>
                 <li><a href="#">Games</a></li>
             </ul>
             <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            <ul class = "sidebar">
+            <ul class = "sidebar"> <!--mobile navbar-->
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Books</a></li>
@@ -30,22 +30,23 @@
             </ul>
         </div>
         <script>
-            function showSidebar(){
-                const sidebar = document.querySelector('.sidebar')
+            function showSidebar(){  //show side bar on click in mobile phones
+                const sidebar = document.querySelector('.sidebar') 
                 sidebar.style.display = 'flex'
             }
 
-            function hideSidebar(){
+            function hideSidebar(){ //close side bar on click in mobile phones
                 const sidebar = document.querySelector('.sidebar')
                 sidebar.style.display = 'none'
             }
         </script>
 
-        <div class="content">
+        <div class="content"> <!--welocome message-->
             <h1>Welcome To Sunshine Kindergarten</h1>
             <p>We're excited to partner with you in nurturing your child's growth, 
                 curiosity, and love for learning!</p>
-                <div>
+                <div> 
+                    <!--content buttons-->
                     <a href="#weekly-schedule"><button type="button"><span></span>Weekly Schedule</button></a>
                     <a href="#class_activities"><button type="button"><span></span>Class Activities</button></a>
                     <a href="#announcements"><button type="button"><span></span>Announcements</button></a>
@@ -56,10 +57,10 @@
     </div>
         </div>
 
-        <div class="item-2">
+        <div class="item-2"> <!--schedule section-->
             <h1 id="weekly-schedule">Weekly Schedule</h1>
-            <table class="table-responsive">
-                <thead> <!-- header of the table -->
+            <table class="table-responsive"> <!--html table for the schedule -->
+                <thead> 
                     
                     <tr> <!--header row of the table-->
                         <th></th>
@@ -123,7 +124,7 @@
         </div>
        
   
-        <div class="item-3">
+        <div class="item-3"> <!--announcement section-->
             <h1 id="announcements">Announcements</h1>
             <ul>
                 <li>Dear parents, please be announced that the payment period for this month ends at 14 October 2024.</li>
@@ -133,11 +134,11 @@
             </ul>
         </div>
 
-        <div class="item-4">
-            <h1 id="photo-gallery">Class Activities</h1>
+        <div class="item-4"><!--class activities section-->
+            <h1 id="photo-gallery">Class Activities</h1> 
                 <div class="gallery">
 
-                    <div class="gallery-item">
+                    <div class="gallery-item"><!--insterting photos on the section-->
                         <img src="images/coloring.jpg" alt="Activity 1">
                         <h2>Coloring Activity</h2>
                     </div>
@@ -164,7 +165,7 @@
 
         </div>
         
-        <div class="item-5">
+        <div class="item-5"> <!--teachers section-->
             <h3 id="our-teachers">Our Teachers</h3>
             <div class="intro" >
                 <p>At Sunshine Kindergarten, we pride ourselves on having a team of highly qualified, 
@@ -215,19 +216,19 @@
         </div>
         
 
-        <div class="item-6">
+        <div class="item-6"> <!--website footer-->
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                    <div class="footerCol">
-                        <h4>Sunshine Kindergarten</h4>
+                    <div class="footerCol"><!--location & time column-->
+                        <h4>Sunshine Kindergarten</h4> 
                         <ul>
                             <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"/></svg> Building 3665, Road 456, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Block 1204, Hamad Town</li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg> Sunday - Thursday <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7:00 am - 1:00 pm</li>
                         </ul>
                         
                     </div>
-                    <div class="footerCol">
+                    <div class="footerCol"><!--resources column-->
                         <h4>Resources</h4>
                         <ul>
                             <li><a href="#">About Us</a></li>
@@ -238,7 +239,7 @@
                         </ul>
                         
                     </div>
-                    <div class="footerCol">
+                    <div class="footerCol"><!--conract us column-->
                         <h4>Contact Us</h4>
                         <ul>
                             <li><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> 33334444</a></li>
@@ -248,7 +249,7 @@
                         
                     </div>
 
-                    <div class="footerCol">
+                    <div class="footerCol"><!--social media links column-->
                         <h4>Follow</h4>
                         <div class="socialLinks">
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
@@ -264,11 +265,6 @@
                     
             </footer>
       </div>
-
-
-      
-    
-
 
 </body>
 </html>
