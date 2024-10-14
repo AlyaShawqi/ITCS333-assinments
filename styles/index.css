@@ -37,6 +37,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .banner{
@@ -218,7 +219,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f3e79c;
 }
 
 /* Style the table headers */
@@ -419,7 +420,7 @@ table tbody tr:hover {
 }
 
 .footer{
-  background-color: #043809;
+  background-color: #04650c;
   padding: 70px 0;
 }
 
@@ -434,13 +435,12 @@ table tbody tr:hover {
 
 .row{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footerCol{
-  width: auto;
-  flex: 1;
-  padding: 0 10px;
+  width: 25%;
+  padding: 0 15px;
 }
 
 .footerCol h4{
@@ -448,8 +448,6 @@ table tbody tr:hover {
   color: #ffffff;
   text-transform: capitalize;
   margin-bottom: 30px;
-  margin: 0 15px 0 0;
-  font-weight: 500;
   position: relative;
 }
 
@@ -460,9 +458,72 @@ table tbody tr:hover {
   bottom: -10px;
   height: 2px;
   box-sizing: border-box;
-  background-color: #007BFF;
+  background-color: #64a76a;
+  width: 50px;
 }
 
-/*.footerCol ul li:not(:last-child){
+.footerCol ul li:not(:last-child){
   margin-bottom: 10px;
+}
+
+.footerCol ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
+}
+
+.footerCol ul li a:hover{
+  color: #113320;
+  padding-left: 10px;
+}
+
+.footerCol ul li {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  color: #bbbbbb;
+}
+
+.footerCol .socialLinks a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.3);
+  transition: all 0.5s ease;
+}
+
+.footerCol .socialLinks a svg{
+vertical-align: center;
+transform: translateY(5px);
+fill: #bbbbbb;
+}
+
+.footerCol .socialLinks a:hover{
+  background-color: #113320;
+}
+
+@media(max-width:800px){
+    .footerCol{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+  .footerCol{
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
